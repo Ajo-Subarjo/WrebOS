@@ -3,7 +3,7 @@
 WrebOS is a browser-based web operating system interface built with React, TypeScript, and Zustand.
 It provides a desktop-like experience with windows, apps, a taskbar, login screen, and other basic OS-style features.
 
-i create this website to learn using zustand and tenary in type script
+i create this website to learn using zustand and tenary in type script and also using react for front end
 
 ## Features
 - Desktop interface
