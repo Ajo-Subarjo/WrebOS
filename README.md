@@ -1,78 +1,34 @@
-# React + TypeScript + Vite
+# WrebOS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WrebOS is a browser-based web operating system interface built with React, TypeScript, and Zustand.
+It provides a desktop-like experience with windows, apps, a taskbar, login screen, and other basic OS-style features.
 
-Currently, two official plugins are available:
+i create this website to learn using zustand and tenary in type script and also using react for front end
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Desktop interface
+- Window management
+- App system
+- Taskbar
+- Login screen
+- Calculator
+- Notepad
+- Clock
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React
+- TypeScript
+- Vite
+- Zustand
+- CSS
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## Credits
 
-## Expanding the ESLint configuration
+- Wallpaper: [Magnific](https://www.magnific.com/free-vector/watercolor-winter-solstice-background_20549598.htm)
+- Close icon: [IconScout](https://iconscout.com/free-icon/free-x-icon_36038)
+- Minimize icon: [IconScout](https://iconscout.com/free-icon/free-minus-icon_1651004)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## License
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+This project is for educational and personal use.
