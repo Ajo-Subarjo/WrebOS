@@ -251,6 +251,11 @@ body{
     border-radius: 10px;
     border: none;
     font-size: 15px;
+    cursor: pointer;
+}
+
+.calculator-operator button:hover {
+    background-color: slategray;
 }
 
 
@@ -259,6 +264,8 @@ body{
 }
 .calculator-result-display {
     font-size: 300%;
+    text-align: right;
+    grid-column:  span 2;
 }
 
 .notepad {
